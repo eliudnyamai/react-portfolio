@@ -1,0 +1,36 @@
+#skills{
+  margin-top:-75px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #FFFFFF;
+  border: 2px solid rgb(197, 195, 195) ;
+  border-radius: 3%;
+}
+.front-end{
+  border-right: 2px solid #2BA0CF ;
+  text-align: center;
+}
+.back-end{
+  border-right: 2px solid #2BA0CF ;
+  text-align: center;
+}
+
+
+.header{  
+color:rgb(12, 14, 17);
+font-family:europa, sans-serif;
+font-size:40px;
+font-weight:300;
+}
+.paragraph{
+  color:rgb(12, 14, 17);
+  font-family:europa, sans-serif;
+  font-size:20px;
+  font-weight:100;
+}
+.sub-heading{
+  color:   #6E3DCA;
+  font-family:europa, sans-serif;
+  font-size:20px;
+  font-weight:100;
+}

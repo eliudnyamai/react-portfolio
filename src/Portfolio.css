@@ -1,0 +1,30 @@
+#portfolio{
+ text-align: center ;
+ color:   #6E3DCA;
+ margin-left: 4px;
+ margin-right: 4px;
+ font-family:europa, sans-serif;
+ font-size:20px;
+ font-weight:100;
+ margin-bottom: 0;
+}
+#card-image{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  margin: 0;  
+}
+.back{
+  height: 300px;
+  background-color: #F7F7F7; 
+  cursor: pointer;
+  overflow-x: auto;
+}
+.front{
+  height: 300px;
+  background-color: #F7F7F7; 
+  cursor: pointer;
+}
+.card-container{
+  margin-bottom: 2%;
+}

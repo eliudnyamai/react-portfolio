@@ -1,0 +1,20 @@
+// Change the primary colour
+$primary: rgb(207, 44, 4);
+
+// Set the sans-serif font
+$font-family-sans-serif: Arial, sans-serif;
+
+// Maybe set a difference heading font family
+$headings-font-family: Georgia, serif;
+
+// Make headings bolder!
+$headings-font-weight: 700;
+
+// Thicken up our borders
+$border-width: 3px;
+
+// Remove the border-radius everywhere
+$border-radius: 0;
+
+// Import Bootstrap 5 Beta!
+@import "~bootstrap/scss/bootstrap.scss";
