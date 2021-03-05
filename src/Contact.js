@@ -1,7 +1,6 @@
 import React from 'react';
 import './contact.css'
 import  emailjs from 'emailjs-com'
-import ReCAPTCHA from "react-google-recaptcha";
 class Contact extends React.Component {
   constructor() {
     super();
@@ -53,8 +52,6 @@ class Contact extends React.Component {
   }
 
   handleSubmit=()=> {
-    console.log('yes')
-    alert(this.state.message)
     if(this.state.message&&this.state.name&&this.state.name){
         this.sendFeedback();
     } else{
@@ -65,11 +62,11 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="row bg-dark text-white py-5">
-        <div id="contact" className="col-md-6 text-center p-2 shadow mx-auto ">
+        <div id="contact" className="col-md-6 text-center mx-auto shadow">
           <h4>Send Me a message</h4>
           <form>
             <input
-              className="form-control text-center col-8 mx-auto"
+              className="form-control col-8 text-center  mx-auto"
               type="text"
               value={this.state.firstName}
               name="name"
@@ -97,15 +94,10 @@ class Contact extends React.Component {
               onChange={this.handleChange}
             />
             <br />
-            <div className="mx-auto d-md-flex col-10 text-center">
-              <ReCAPTCHA
-                className=" px-5 "
-                sitekey="6Lcxi8EUAAAAABwrCyKCoJmbZMeNUrTI1K5jm-TG"
-                onChange={this.handleRecaptcha}
-              />
+            <div className="mx-auto d-lg-flex  recaptcha col-8 text-center">
               <input
                 onClick={this.handleSubmit}
-                className="mt-2 mt-md-4 btn button btn-large btn-success"
+                className=" mt-md-4 btn button btn-large btn-success"
                 type="button"
                 value="Send"
               />
@@ -116,39 +108,38 @@ class Contact extends React.Component {
           </form>
         </div>
         <div className="social text-center  mx-auto col-md-4">
-            <h3 className="mt-1">Social</h3>
-            <div className="">
-              <i className=" icon  fab fa-twitter"></i>
-              <span className="h5">&nbsp;Follow me at</span>
-              <a className="h5" href="https://twitter.com/MitauNyamai">
-                &nbsp;Mitau Nyamai
-              </a>
-            </div>
-            <div className="mb-2">
-              <i className=" icon fab fa-linkedin"></i>
-              <span className="h5">&nbsp; Follow me at</span>
-              <a className="h5" href="https://linkedin.com/in/nyamai-mitau">
-                &nbsp;Nyamai Mitau
-              </a>
-            </div>
-            <div className="mb-2">
-              <i className=" icon fab fa-github"></i>
-              <span className="h5"> &nbsp;Follow me at </span>
-              <a className="h5" href="https://github.com/eliudnyamai">
-                &nbsp;eliudnyamai
-              </a>
-            </div>
+          <h3 className="mt-1">Social</h3>
+          <div className="">
+            <i className=" icon  fab fa-twitter"></i>
+            <span className="h5">Follow me at</span>
+            <a className="h5" href="https://twitter.com/MitauNyamai">
+              Mitau Nyamai
+            </a>
+          </div>
+          <div className="mb-2">
+            <i className=" icon fab fa-linkedin"></i>
+            <span className="h5"> Follow me at</span>
+            <a className="h5" href="https://linkedin.com/in/nyamai-mitau">
+              Nyamai Mitau
+            </a>
+          </div>
+          <div className="mb-2">
+            <i className=" icon fab fa-github"></i>
+            <span className="h5"> Follow me at </span>
+            <a className="h5" href="https://github.com/eliudnyamai">
+              eliudnyamai
+            </a>
+          </div>
 
-            <div className="">
-              <i className=" icon  fas fa-phone"></i>
-              <span className="h5">&nbsp;Call me at</span>
-              <a href="tel:+254790508982" className="h5">
-                &nbsp; +254790508982
-              </a>
-            </div>
+          <div className="">
+            <i className=" icon  fas fa-phone"></i>
+            <span className="h5">Call me at</span>
+            <a href="tel:+254790508982" className="h5">
+              +254790508982
+            </a>
           </div>
         </div>
-     
+      </div>
     );
   }
 }

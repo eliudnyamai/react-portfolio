@@ -9,7 +9,7 @@
 .button{
 position: relative;
  width: 160px;
- margin:auto;
+ /* margin:auto; */
  background-image: linear-gradient(to right, #2BA0CF , #6E3DCA); 
  text-align: center;
  font-size: 1.2rem;
@@ -19,4 +19,7 @@ position: relative;
 }
 .button:hover{
     background-image: linear-gradient(to right,  #6E3DCA,#2BA0CF ); 
+}
+.recaptcha{
+  border: px solid white;
 }
