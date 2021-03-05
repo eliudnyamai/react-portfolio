@@ -8,7 +8,7 @@
 }
 .button{
 position: relative;
-  max-width: 120px;
+ width: 160px;
  margin:auto;
  background-image: linear-gradient(to right, #2BA0CF , #6E3DCA); 
  text-align: center;
