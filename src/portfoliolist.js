@@ -11,7 +11,7 @@ export const Portfoliolist = [
     img_url: elimakes,
     site_url: "https://eliudmakes.com/",
     back_text:
-      "This website is also part of the project which I developed. It is done with HTML, CSS, React,and PHP",
+      "This website is also part of the project which I developed. It is done with HTML, CSS, and React",
     btn_text: "Visit",
   },
   {
@@ -57,7 +57,7 @@ export const Portfoliolist = [
     img_url: game,
     site_url: "https://eliudnyamai.github.io/project6/",
     back_text:
-      "This is a turn taking board game made with object-oriented pure js",
+      "This is a turn taking board game made with object-oriented pure js. Made for the purpose of testing concepts only",
     btn_text: "Visit",
   },
 ];

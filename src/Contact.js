@@ -8,16 +8,10 @@ class Contact extends React.Component {
       name: "",
       email: "",
       message: "",
-      feedback:"",
-      recaptcha:false
+      feedback:""
     };
     this.handleChange = this.handleChange.bind(this);
     this.sendFeedback=this.sendFeedback.bind(this);
-    this.handleRecaptcha=this.handleRecaptcha(this);
-  }
-  handleRecaptcha(){
-   this.setState({recaptcha:true})
-   console.log(this.state.recaptcha)
   }
   handleChange(event) {
     const { name, value } = event.target;
@@ -50,7 +44,6 @@ class Contact extends React.Component {
       }
       );
   }
-
   handleSubmit=()=> {
     if(this.state.message&&this.state.name&&this.state.name){
         this.sendFeedback();
@@ -58,7 +51,6 @@ class Contact extends React.Component {
       this.setState({feedback:"All fields are required"})
     }
   }
-
   render() {
     return (
       <div className="row bg-dark text-white py-5">

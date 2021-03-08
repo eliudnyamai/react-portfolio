@@ -20,6 +20,3 @@ position: relative;
 .button:hover{
     background-image: linear-gradient(to right,  #6E3DCA,#2BA0CF ); 
 }
-.recaptcha{
-  border: px solid white;
-}

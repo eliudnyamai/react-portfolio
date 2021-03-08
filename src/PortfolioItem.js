@@ -8,12 +8,17 @@ class PortfolioItem extends React.Component {
       super();
       this.state = {
         isFlipped: false,
+        isHovered:""
       };
       this.handleClick = this.handleClick.bind(this);
+      this.requestClick=this.requestClick.bind(this);
   }
   handleClick(e) {
     e.preventDefault();
     this.setState((prevState) => ({ isFlipped: !prevState.isFlipped }));
+  }
+  requestClick(){
+  this.setState((prevState) => ({ isHovered: !prevState.isHovered }));
   }
   render() {
     return (
@@ -24,9 +29,20 @@ class PortfolioItem extends React.Component {
           id="flip"
           className="flip-card"
         >
-          <div onMouseEnter={this.handleClick} className="front">
+          <div
+            onMouseEnter={this.requestClick}
+            onMouseLeave={this.requestClick}
+            onFocus={this.requestClick}
+            className="front"
+          >
             <div className="card-header">{this.props.PortfolioItem.title}</div>
             <div className="card-body">
+              {this.state.isHovered ? 
+                <span class="request-click badge ">Click to flip</span>
+               : 
+                ""
+              }
+
               <img
                 id="card-image"
                 src={this.props.PortfolioItem.img_url}
@@ -34,7 +50,7 @@ class PortfolioItem extends React.Component {
               ></img>
             </div>
           </div>
-          <div onMouseLeave={this.handleClick} className="back">
+          <div onClick={this.handleClick} className="back">
             <div className="card-header"> {this.props.PortfolioItem.title}</div>
             <div className="card-body">
               {this.props.PortfolioItem.back_text}

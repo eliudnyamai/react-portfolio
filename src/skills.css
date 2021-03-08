@@ -1,9 +1,10 @@
 #skills{
   margin-top:-75px;
-  
   background-color: #FFFFFF;
   border: 2px solid rgb(197, 195, 195) ;
   border-radius: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .front-end{
   border-right: 2px solid #2BA0CF ;
@@ -13,8 +14,6 @@
   border-right: 2px solid #2BA0CF ;
   text-align: center;
 }
-
-
 .header{  
 color:rgb(12, 14, 17);
 font-family:europa, sans-serif;

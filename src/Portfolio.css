@@ -26,3 +26,13 @@
 .card-container{
   margin-bottom: 2%;
 }
+small{
+  font-size:0.1rem;
+}
+.request-click{
+  background-color: black;
+  height: 20px;
+  position: absolute;
+  bottom: 45%;
+  left: 35%;
+}
